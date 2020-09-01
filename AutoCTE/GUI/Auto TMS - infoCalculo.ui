@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object id="infoCalcular" class="ttk.Frame">
+    <property name="borderwidth">5</property>
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+      <rows>
+        <row id="2">
+          <property name="minsize">15</property>
+        </row>
+      </rows>
+    </layout>
+    <child>
+      <object id="lb_calcTitle" class="ttk.Label">
+        <property name="text" translatable="yes">Qtde de viagens:</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">w</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object id="viag_Number" class="ttk.Entry">
+        <property name="cursor">arrow</property>
+        <property name="exportselection">true</property>
+        <property name="font">TkDefaultFont</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">5</property>
+        <property name="textvariable">int:viag</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object id="bt_Iniciar" class="ttk.Button">
+        <property name="command">iniciar_Clicked</property>
+        <property name="text" translatable="yes">Iniciar</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">3</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

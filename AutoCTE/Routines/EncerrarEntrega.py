@@ -1,0 +1,75 @@
+# -*- coding: utf-8 -*-
+from AutoCTE.SubRoutines.AutoActions import ClickOn
+from AutoCTE.SubRoutines.AutoActions import WriteOn
+from AutoCTE.SubRoutines.AutoActions import Sleep
+from AutoCTE.SubRoutines.AutoActions import CheckFor
+from AutoCTE.SubRoutines.AutoActions import PressKey
+import pyautogui
+from datetime import date
+from datetime import datetime
+
+def EncerrarKlabin (qtde, flag):
+	
+	for i in range(qtde):
+	
+		ClickOn("./AutoCTE/Buttons/CHECKEncViag.bmp")
+		Sleep(1)
+		pyautogui.keyDown ('altleft')
+		WriteOn('on')
+		pyautogui.keyUp ('altleft')
+		PressKey('down', 5)
+		PressKey('right')
+		PressKey('enter')
+		ClickOn("./AutoCTE/Buttons/OK2.bmp")
+		CheckFor('./AutoCTE/Buttons/CHECKFechada.bmp', precision = 0.95)
+		pyautogui.keyDown ('altleft')
+		WriteOn('on')
+		pyautogui.keyUp ('altleft')
+		PressKey('down', 4)
+		PressKey('enter')
+		Sleep(1)
+		WriteOn('a')
+		Sleep(1)
+		today = date.today()
+		now = datetime.now()
+		day = today.strftime("%d%m%y")
+		WriteOn(str(day))
+		WriteOn(now.strftime("%H%M"))
+		WriteOn(str(day))
+		WriteOn(now.strftime("%H%M"))
+		ClickOn("./AutoCTE/Buttons/CONFIRMAR5.bmp")
+		PressKey('down')
+		WriteOn('a')
+		WriteOn(str(day))
+		WriteOn(now.strftime("%H%M"))
+		WriteOn(str(day))
+		WriteOn(now.strftime("%H%M"))
+		ClickOn("./AutoCTE/Buttons/CONFIRMAR5.bmp")
+		WriteOn('s')
+		Sleep(3)
+		pyautogui.keyDown ('altleft')
+		WriteOn('on')
+		pyautogui.keyUp ('altleft')
+		PressKey('down', 6)
+		PressKey('enter')
+		WriteOn('a')
+		CheckFor('./AutoCTE/Buttons/CHECKRegOcorr.bmp', precision = 0.95)
+		PressKey('right')
+		PressKey('enter')
+		WriteOn(str(day))
+		PressKey('enter')
+		WriteOn(now.strftime("%H%M"))
+		PressKey('enter')
+		WriteOn('0002')
+		ClickOn("./AutoCTE/Buttons/SALVAR.bmp")
+		Sleep(2)
+		WriteOn('s')
+		Sleep(1)
+		pyautogui.keyDown ('altleft')
+		WriteOn('on')
+		pyautogui.keyUp ('altleft')
+		PressKey('down', 7)
+		PressKey('right')
+		PressKey('enter')
+		ClickOn("./AutoCTE/Buttons/OK2.bmp")
+		PressKey('down')

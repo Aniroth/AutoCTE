@@ -1,0 +1,10 @@
+__pycache__
+AutoCTE/__pycache__
+AutoCTE/Classes/__pycache__
+AutoCTE/GUI/__pycache__
+AutoCTE/Routines/__pycache__
+AutoCTE/SubRoutines/__pycache__
+*.spec
+build
+dist
+~$*

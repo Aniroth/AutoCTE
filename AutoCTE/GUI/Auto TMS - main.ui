@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="mainWindow">
+    <property name="borderwidth">10</property>
+    <property name="height">200</property>
+    <property name="padding">0</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">12</property>
+      <rows>
+        <row id="9">
+          <property name="minsize">30</property>
+        </row>
+      </rows>
+    </layout>
+    <child>
+      <object class="ttk.Frame" id="titleFrame">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="title">
+            <property name="font">{Arial CYR} 20 {bold}</property>
+            <property name="text" translatable="yes">AutoTMS</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="buttonsFrame">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="sticky">w</property>
+          <rows>
+            <row id="0">
+              <property name="minsize">0</property>
+            </row>
+            <row id="1">
+              <property name="minsize">0</property>
+            </row>
+            <row id="2">
+              <property name="minsize">0</property>
+            </row>
+            <row id="3">
+              <property name="minsize">0</property>
+            </row>
+            <row id="4">
+              <property name="minsize">0</property>
+            </row>
+            <row id="5">
+              <property name="minsize">0</property>
+            </row>
+          </rows>
+        </layout>
+        <child>
+          <object class="ttk.Labelframe" id="lbframeCTEKlabin">
+            <property name="height">0</property>
+            <property name="padding">5</property>
+            <property name="text" translatable="yes">CTE - Klabin</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">w</property>
+              <rows>
+                <row id="0">
+                  <property name="minsize">0</property>
+                </row>
+                <row id="1">
+                  <property name="minsize">25</property>
+                </row>
+              </rows>
+            </layout>
+            <child>
+              <object class="ttk.Button" id="button_Auto_CTE">
+                <property name="command">autoCTE_Clicked</property>
+                <property name="text" translatable="yes">CTE - Klabin</property>
+                <property name="width">20</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lb_Klabin">
+                <property name="text" translatable="yes">Emissão automática de CTE - Klabin</property>
+                <property name="width">50</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Labelframe" id="lbframeCTE">
+            <property name="height">200</property>
+            <property name="labelanchor">nw</property>
+            <property name="padding">5</property>
+            <property name="text" translatable="yes">CTE - Interno</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property name="sticky">w</property>
+              <rows>
+                <row id="0">
+                  <property name="minsize">25</property>
+                </row>
+                <row id="1">
+                  <property name="minsize">25</property>
+                </row>
+              </rows>
+            </layout>
+            <child>
+              <object class="ttk.Button" id="button_Auto_Normal">
+                <property name="command">CTE_Clicked</property>
+                <property name="state">normal</property>
+                <property name="text" translatable="yes">CTE - Interno</property>
+                <property name="width">20</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lb_Normal">
+                <property name="text" translatable="yes">Emissão de CTEs internos</property>
+                <property name="width">50</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Labelframe" id="lbframeAgend">
+            <property name="height">200</property>
+            <property name="padding">5</property>
+            <property name="text" translatable="yes">Agendamento Automático</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="sticky">w</property>
+              <rows>
+                <row id="0">
+                  <property name="minsize">0</property>
+                </row>
+                <row id="1">
+                  <property name="minsize">40</property>
+                </row>
+              </rows>
+            </layout>
+            <child>
+              <object class="ttk.Button" id="button_Auto_Agendamento">
+                <property name="command">autoAgendamento_Clicked</property>
+                <property name="text" translatable="yes">Agendamento</property>
+                <property name="width">20</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lb_Agendamento">
+                <property name="anchor">w</property>
+                <property name="text" translatable="yes">Agendamento automático</property>
+                <property name="width">29</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="button_Concluir">
+                <property name="command">autoConfirma_Clicked</property>
+                <property name="text" translatable="yes">Confirmar Agend.</property>
+                <property name="width">20</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="txb_qtdeViag">
+                <property name="cursor">arrow</property>
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">Qtde. de Viagens</property>
+                <property name="textvariable">string:qtdeViag</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="txb_codViag">
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">Cód. de Viagem</property>
+                <property name="textvariable">string:codViag</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Labelframe" id="lbframeEncerrar">
+            <property name="height">200</property>
+            <property name="padding">5</property>
+            <property name="text" translatable="yes">Encerramento</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+              <rows>
+                <row id="0">
+                  <property name="minsize">25</property>
+                </row>
+                <row id="1">
+                  <property name="minsize">40</property>
+                </row>
+              </rows>
+              <columns>
+                <column id="1">
+                  <property name="minsize">305</property>
+                </column>
+              </columns>
+            </layout>
+            <child>
+              <object class="ttk.Button" id="button_EncerraEntrega">
+                <property name="command">autoEncerrarEntrega_Clicked</property>
+                <property name="text" translatable="yes">Encerrar Entrega</property>
+                <property name="width">20</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="txb_qtdeViagREPOM">
+                <property name="cursor">arrow</property>
+                <property name="exportselection">true</property>
+                <property name="font">TkDefaultFont</property>
+                <property name="justify">left</property>
+                <property name="takefocus">false</property>
+                <property name="text" translatable="yes">Qtde Viagens</property>
+                <property name="textvariable">string:viagREPOM</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="button_Encerrar">
+                <property name="command">autoEncerrar_Clicked</property>
+                <property name="text" translatable="yes">Encerrar Coleta</property>
+                <property name="width">20</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="AltRepom">
+                <property name="command">autoEncerrar_AlterarRepom</property>
+                <property name="text" translatable="yes">Alterar REPOM</property>
+                <property name="width">20</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Labelframe" id="lbframeCalculo">
+            <property name="height">200</property>
+            <property name="padding">5</property>
+            <property name="text" translatable="yes">Calculo Automático</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+              <property name="sticky">w</property>
+              <rows>
+                <row id="0">
+                  <property name="minsize">25</property>
+                </row>
+                <row id="1">
+                  <property name="minsize">40</property>
+                </row>
+              </rows>
+              <columns>
+                <column id="0">
+                  <property name="minsize">40</property>
+                </column>
+              </columns>
+            </layout>
+            <child>
+              <object class="ttk.Button" id="button_Auto_Calcular">
+                <property name="command">autoCalcular_Clicked</property>
+                <property name="text" translatable="yes">Calcular</property>
+                <property name="width">20</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lb_Calculo">
+                <property name="padding">0</property>
+                <property name="text" translatable="yes">Calcular CTes automaticamente</property>
+                <property name="width">50</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="txb_qtdeViag_1">
+                <property name="cursor">based_arrow_down</property>
+                <property name="exportselection">true</property>
+                <property name="justify">left</property>
+                <property name="takefocus">false</property>
+                <property name="text" translatable="yes">Qtde viagens</property>
+                <property name="textvariable">string:viag</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="lb_Path">
+        <property name="text" translatable="yes">U:\AutoCTE\LISTA.xlsx</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">10</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="button_AbrirExcel">
+        <property name="command">abrirExcel</property>
+        <property name="cursor">hand1</property>
+        <property name="text" translatable="yes">Abrir LISTA</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">10</property>
+          <property name="sticky">w</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
